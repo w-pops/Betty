@@ -22,5 +22,5 @@ putchar (CH);
 CH++;
 }
 putchar ('\n');
-return(0);
+return (0);
 }
