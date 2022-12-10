@@ -2,7 +2,8 @@
 #include <stdlib.h>
 /**
  * main - main block
- * Description: write a program that prints all different combinations of two digits
+ * Description: write a program that prints
+ * all different combinations of two digits
  * Numbers must be separated by ,, followed by a space
  * The two digits must be different
  * 01 and 10 are considered the same combination of the two digits
