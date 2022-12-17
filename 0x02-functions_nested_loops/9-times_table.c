@@ -6,7 +6,7 @@
  */
 void times_table(void)
 {
-int s = 0, e = 9, count - 0;
+int s = 0, e = 9, count = 0;
 
 while (count <= 9)
 {
