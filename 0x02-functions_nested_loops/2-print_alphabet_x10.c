@@ -19,5 +19,6 @@ _putchar(c);
 i++;
 }
 _putchar('\n');
+return (void);
 }
 
