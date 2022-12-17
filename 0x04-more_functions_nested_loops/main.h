@@ -1,10 +1,6 @@
-#ifndef main_h                                               
+#ifndef main_h
 
-#define main_h                                               
-
-                                                             
-
-int _putchar(char c);                                          
+#define main_h
 
 int _isupper(int c);
 
@@ -30,6 +26,6 @@ void print_number(int n);
 
 
 
-#endif 
+#endif
 
 
