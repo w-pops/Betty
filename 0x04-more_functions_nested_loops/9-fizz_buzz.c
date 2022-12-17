@@ -13,7 +13,7 @@ while (start <= 100)
 {
 if (start % 3 == 0)
 printf("Fizz");
-if (star % 5 == 0)
+if (start % 5 == 0)
 printf("Buzz");
 if (start % 3 != 0 && start % 5 != 0)
 printf("%d", start);
