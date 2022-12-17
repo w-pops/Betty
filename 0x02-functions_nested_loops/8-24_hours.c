@@ -2,6 +2,7 @@
 /**
  * jack_bauer - prints every minute of the day of Jack Bauer, \
  * starting from 00:00 to 23:59
+ *
  * Return: nothing on success
  */
 void jack_bauer(void)
@@ -16,7 +17,7 @@ _putchar(s < 9 ? 0 + '0' : s / 10 + '0');
 _putchar(s < 9 ? s + '0' : s % 10 + '0');
 _putchar(':');
 _putchar(s2 < 9 ? 0 + '0' : s2 / 10 + '0');
-_putchar(s2 < 9 ? s2 + '0' : s2 / 10 + '0');
+_putchar(s2 < 9 ? s2 + '0' : s2 % 10 + '0');
 _putchar('\n');
 
 s2++;
