@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 /**
  * print_triangle - prints a triangle
@@ -11,7 +13,7 @@ void print_triangle(int size)
 int start = 0, end = size, count;
 
 if (size <= 0)
-_putchar('\n');
+putchar('\n');
 else
 {
 for (count = 0; count < end; count++)
@@ -19,13 +21,13 @@ for (count = 0; count < end; count++)
 while (start < end)
 {
 if ((start + count + 1) >= end)
-_putchar('#');
+putchar('#');
 else
-_putchar(' ');
+putchar(' ');
 start++;
 }
 start = 0;
-_putchar('\n');
+putchar('\n');
 }
 }
 }
