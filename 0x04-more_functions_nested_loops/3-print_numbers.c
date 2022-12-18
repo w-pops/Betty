@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 /**
  *print_numbers - print numbers
@@ -11,8 +13,8 @@ int i;
 i = 0;
 while (i < 10)
 {
-_putchar (i + '0');
+putchar (i + '0');
 i++;
 }
-_putchar('\n');
+putchar('\n');
 }
