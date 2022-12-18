@@ -1,5 +1,6 @@
 #include "main.h"
-
+#include <stdio.h>
+#include <stdlib.h>
 /**
  * print_diagonal - draws a diagonal line in the terminal
  * @n: line length
@@ -11,7 +12,7 @@ void print_diagonal(int n)
 int count = 0, start = 0, end;
 
 if (n <= 0)
-_putchar('\n');
+putchar('\n');
 else
 {
 while (count < n)
@@ -21,11 +22,11 @@ while (start <= end)
 {
 if (start == end)
 {
-_putchar('\\');
-_putchar('\n');
+putchar('\\');
+putchar('\n');
 }
 else
-_putchar(' ');
+putchar(' ');
 start++;
 }
 start = 0;
