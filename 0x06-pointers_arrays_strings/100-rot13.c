@@ -2,26 +2,27 @@
 
 /**
  * rot13 - encodes a string using rot13
- * @str: the string targeted
- * Return: returns the encoded string
+ * @s: the string to be encoded to rot13
+ * Return: the string s encoded to rot13
  */
+char *rot13(char *s)
+{
+int i = 0, j = 0;
+char string_rot13[] = "NnOoPpQqRrSsTtUuVvWwXxYyZzAaBbCcDdEeFfGgHhIiJjKkLlMm";
+char string_alpha[] = "AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz";
 
-char *rot13(char *str)
+while (s[i] != '\0')
 {
-int index1, index2;
-char alphabet[52] = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'a','b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l','m', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'};
-char rot13key[52] = {'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm'};
-
-while (str[++index1])
+do {
+if (s[i] == string_alpha[j])
 {
-for (index2 = 0; index2 < 52; index2++)
-{
-if(str[index1] == alphabet[index2])
-{
-str[index2] = rot13key[index2];
+s[i] = string_rot13[j];
 break;
 }
+j++;
+} while (string_alpha[j] != '\0');
+j = 0;
+i++;
 }
-}
-return (str);
+return (s);
 }
